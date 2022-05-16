@@ -41,3 +41,7 @@ alias lll='ls -laht'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+
+alias gst='git status'
+alias gaa='git add --all'
+alias gcm='git commit -m '
