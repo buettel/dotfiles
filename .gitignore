@@ -3,4 +3,6 @@
 !.gitignore
 !.zshenv
 !.config/
-
+!.config/**
+.config/zsh/.zsh_sessions/
+.config/cache/
