@@ -33,7 +33,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 ## my aliase
 
 alias pip='pip3'
-alias ls='ls --color=auto'
+alias ls='ls --color=always -FH'
 #alias ls='ls -G'
 alias l='ls'
 alias ll='ls -lah'
