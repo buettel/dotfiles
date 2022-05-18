@@ -1,3 +1,5 @@
+# Fig pre block. Keep at the top of this file.
+. "$HOME/.fig/shell/zshrc.pre.zsh"
 ## edit startup 
 # autoload -Uz zsh-newuser-install && zsh-newuser-install -f
 
@@ -45,3 +47,6 @@ alias ....='cd ../../..'
 alias gst='git status'
 alias gaa='git add --all'
 alias gcm='git commit -m '
+
+# Fig post block. Keep at the bottom of this file.
+. "$HOME/.fig/shell/zshrc.post.zsh"
