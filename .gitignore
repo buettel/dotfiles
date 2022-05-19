@@ -9,3 +9,4 @@
 .config/cache/
 .config/zsh/.zsh_history
 .config/local/share/ranger/bookmarks
+.config/zsh-autosuggestions/

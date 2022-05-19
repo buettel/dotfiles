@@ -1,6 +1,9 @@
 ## edit startup 
 # autoload -Uz zsh-newuser-install && zsh-newuser-install -f
 
+## add autokompletion
+source ~/.config/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # The following lines were added by compinstall
 
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS} 
