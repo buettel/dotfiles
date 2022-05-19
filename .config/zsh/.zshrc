@@ -1,18 +1,15 @@
 ## edit startup 
 # autoload -Uz zsh-newuser-install && zsh-newuser-install -f
 
-## add autokompletion
+## autocompletion
+fpath=(~/.config/zsh-completions/src $fpath)
+## autosuggestion
 source ~/.config/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # The following lines were added by compinstall
 
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS} 
-#completer _list _oldlist _expand _complete _ignored _match _correct _approximate _prefix 
-#zstyle :compinstall filename '/Users/wolfgang.risse/.config/autocomplete/'
 
-autoload -Uz compinit
-compinit
-# End of lines added by compinstall
 # Lines configured by zsh-newuser-install
 
 setopt autocd nomatch notify
