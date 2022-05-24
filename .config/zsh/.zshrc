@@ -28,7 +28,5 @@ RPROMPT=\$vcs_info_msg_0_
 zstyle ':vcs_info:git:*' formats '%F{240}(%b)%r%f'
 zstyle ':vcs_info:*' enable git
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
 ## my aliase
 source .config/zsh/aliases
