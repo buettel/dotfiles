@@ -1,7 +1,14 @@
-#export TERM='rxvt-256color'
+#!/usr/bin/env zsh
 
-export CLICOLOR=1
-export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+export TERM='rxvt-256color'
+export DOTFILES="$HOME/.dotfiles"
+export WORKSPACE="$HOME/workspace"
+
+[ -f "$DOTFILES/install_config" ] && source "$DOTFILES/install_config"
+
+
+#export CLICOLOR=1
+#export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 # LS_COLORS=$LS_COLORS:'di=1;93:' ; export LS_COLORS
 

@@ -31,17 +31,4 @@ zstyle ':vcs_info:*' enable git
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 ## my aliase
-
-alias pip='pip3'
-alias ls='ls --color=always -FH'
-#alias ls='ls -G'
-alias l='ls'
-alias ll='ls -lah'
-alias lll='ls -laht'
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-
-alias gst='git status'
-alias gaa='git add --all'
-alias gcm='git commit -m '
+source .config/zsh/aliases

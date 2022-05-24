@@ -5,6 +5,7 @@
 !.zshenv
 !.config/
 !.config/**
+!.pre-commit-config.yaml
 .config/zsh/.zsh_sessions/
 .config/cache/
 .config/zsh/.zsh_history
