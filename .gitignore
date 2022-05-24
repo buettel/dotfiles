@@ -9,6 +9,6 @@
 .config/zsh/.zsh_sessions/
 .config/cache/
 .config/zsh/.zsh_history
-.config/local/share/ranger/bookmarks
+.config/local/share/ranger/*
 .config/zsh-autosuggestions/
 .config/zsh-completions/
