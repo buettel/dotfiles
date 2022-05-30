@@ -1,6 +1,9 @@
 ## edit startup 
 # autoload -Uz zsh-newuser-install && zsh-newuser-install -f
 
+## brew important!
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 ## autocompletion
 fpath=(~/.config/zsh-completions/src $fpath)
 ## autosuggestion
@@ -12,34 +15,20 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
 # Lines configured by zsh-newuser-install
 
-setopt autocd nomatch notify
+setopt autocd nomatch notify prompt_subst correct appendhistory autocd nomatch
 unsetopt beep extendedglob
 bindkey -e
 # End of lines configured by zsh-newuser-install
  
 ### my Prompt
 
-PROMPT='%(?.%F{green}0.%F{red}?%?)%f %B%F{240}%2~%f%b %# '
+PROMPT='%(?.%F{green}0.%F{red}?%?)%f %B%F{yellow}%2~%f%b %# '
 autoload -Uz vcs_info
 precmd_vcs_info() { vcs_info }
 precmd_functions+=( precmd_vcs_info )
-setopt prompt_subst correct appendhistory autocd beep extendedglob nomatch notify
 RPROMPT=\$vcs_info_msg_0_
 zstyle ':vcs_info:git:*' formats '%F{240}(%b)%r%f'
 zstyle ':vcs_info:*' enable git
 
 ## my aliase
-
-alias pip='pip3'
-alias ls='ls --color=always -FH'
-#alias ls='ls -G'
-alias l='ls'
-alias ll='ls -lah'
-alias lll='ls -laht'
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-
-alias gst='git status'
-alias gaa='git add --all'
-alias gcm='git commit -m '
+source .config/zsh/aliases
