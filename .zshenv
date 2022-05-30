@@ -3,6 +3,7 @@
 export TERM='rxvt-256color'
 export DOTFILES="$HOME/.dotfiles"
 export WORKSPACE="$HOME/workspace"
+export LSCOLORS=Dxfxcxdxbxegedabagacad
 
 [ -f "$DOTFILES/install_config" ] && source "$DOTFILES/install_config"
 
