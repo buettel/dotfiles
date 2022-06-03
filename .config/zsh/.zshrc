@@ -2,11 +2,12 @@
 # autoload -Uz zsh-newuser-install && zsh-newuser-install -f
 
 ## brew important!
-eval "$(/opt/homebrew/bin/brew shellenv)"
+[ -d /opt/homebrew ] && eval "$(/opt/homebrew/bin/brew shellenv)"
 
 ## autocompletion
 fpath=(~/.config/zsh-completions/src $fpath)
 ## autosuggestion
+[ -d ~/.config/zsh-autosuggestions ] || git clone https://github.com/zsh-users/zsh-autosuggestions ~/.config/zsh-autosuggestions
 source ~/.config/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # The following lines were added by compinstall
