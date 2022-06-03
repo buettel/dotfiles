@@ -8,5 +8,5 @@
 .config/zsh/.zsh_sessions/
 .config/cache/
 .config/zsh/.zsh_history
-.config/local/share/ranger/bookmarks
+.config/local/share/
 .config/zsh-*

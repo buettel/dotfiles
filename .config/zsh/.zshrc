@@ -4,8 +4,6 @@
 ## brew important!
 [ -d /opt/homebrew ] && eval "$(/opt/homebrew/bin/brew shellenv)"
 
-## autocompletion
-fpath=(~/.config/zsh-completions/src $fpath)
 ## autosuggestion
 [ -d ~/.config/zsh-autosuggestions ] || ( \
   git clone https://github.com/zsh-users/zsh-autosuggestions ~/.config/zsh-autosuggestions \
