@@ -7,7 +7,9 @@
 ## autocompletion
 fpath=(~/.config/zsh-completions/src $fpath)
 ## autosuggestion
-[ -d ~/.config/zsh-autosuggestions ] || git clone https://github.com/zsh-users/zsh-autosuggestions ~/.config/zsh-autosuggestions
+[ -d ~/.config/zsh-autosuggestions ] || ( \
+  git clone https://github.com/zsh-users/zsh-autosuggestions ~/.config/zsh-autosuggestions \
+  && rm -rf ~/.config/zsh-autosuggestions/.git )
 source ~/.config/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # The following lines were added by compinstall
