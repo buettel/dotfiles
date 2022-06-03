@@ -12,6 +12,14 @@ fpath=(~/.config/zsh-completions/src $fpath)
   && rm -rf ~/.config/zsh-autosuggestions/.git )
 source ~/.config/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+
+## autocompletion
+[ -d ~/.config/zsh-autocomplete ] || ( \
+  git clone https://github.com/marlonrichert/zsh-autocomplete.git ~/.config/zsh-autocomplete \
+  && rm -rf ~/.config/zsh-autocomplete/.git )
+source ~/.config/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+
+
 # The following lines were added by compinstall
 
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS} 
