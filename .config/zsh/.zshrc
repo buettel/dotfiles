@@ -25,7 +25,7 @@ bindkey -e
  
 ### my Prompt
 
-PROMPT='%(?.%F{green}0.%F{red}?%?)%f %B%F{yellow}%2~%f%b %# '
+PROMPT='%(?.%F{green}0.%F{red}?%?)%f %m %B%F{yellow}%2~%f%b %# '
 autoload -Uz vcs_info
 precmd_vcs_info() { vcs_info }
 precmd_functions+=( precmd_vcs_info )
