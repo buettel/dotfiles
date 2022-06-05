@@ -11,3 +11,6 @@ alias ....='cd ../../..'
 alias gst='git status'
 alias gaa='git add --all'
 alias gcm='git commit -m '
+
+alias svi='sudo vi'
+alias spi='ssh pi@10.10.11.1 -C "sudo shutdown -h now"'
